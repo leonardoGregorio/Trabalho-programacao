@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W#C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+    <h:head> 
+        <title>
+            Fafiman
+        </title>
+    </h:head>
+    <h:body>
+        <h:form id="formulario">
+            <p:panelGrid style="width: 100%">
+                <f:facet name="header">
+                    <p:row>
+                        <p:column colspan="6" >Trabalho Prof Fernando Paschualeto - Principal </p:column> 
+                    </p:row>
+                </f:facet>
+                <p:row>
+                    <p:column style="width: 33%;text-align: center">
+                        <p:commandButton value="Cadastrar Marca" style="width:80%;height:300px" action="/cadmarcas/edita.xhtml" actionListener="#{marcaControlador.novo()}"/>
+                    </p:column>
+                    <p:column style="width: 33%;text-align: center">
+                        <p:commandButton value="Automóvel" style="width:80%;height:300px" action="/cadautomovel/edita.xhtml" actionListener="#{automovelControlador.novo()}"/>
+                    </p:column >
+                    <p:column style="width: 33%;text-align: center">
+                        <p:commandButton value="Motocicleta" style="width:80%;height:300px" action="/cadmotocicleta/edita.xhtml" actionListener="#{motocicletaControlador.novo()}"/>
+                    </p:column>
+                </p:row>
+            </p:panelGrid>
+        </h:form>
+    </h:body>
+</html>
